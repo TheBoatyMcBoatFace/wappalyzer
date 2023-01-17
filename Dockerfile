@@ -1,29 +1,31 @@
 FROM node:14-alpine
 
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
-ENV CHROME_BIN /usr/bin/chromium-browser
+MAINTAINER Wappalyzer <hello@wappalyzer.com>
 
-RUN apk update
-RUN apk add --no-cache \
+ENV WAPPALYZER_ROOT /opt/wappalyzer
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
+ENV CHROMIUM_BIN /usr/bin/chromium-browser
+
+RUN apk update && apk add -u --no-cache \
   nodejs \
-  npm \
   udev \
   chromium \
   ttf-freefont \
-  python3 \
-  make \
-  build-base \
-  git
+  yarn
 
-RUN mkdir /app && chown node /app
-USER 1000
-WORKDIR /app
+RUN mkdir -p "$WAPPALYZER_ROOT/browsers"
 
-ADD *.json /app/
-RUN npm i
+WORKDIR "$WAPPALYZER_ROOT"
 
-ADD *.js /app/
+COPY technologies ./src/technologies
+COPY \
+  ./src/drivers/npm/cli.js \
+  ./src/categories.json \
+  ./src/drivers/npm/driver.js \
+  ./src/package.json \
+  ./src/wappalyzer.js \
+  yarn.lock ./
 
-RUN /usr/bin/chromium-browser --version
+RUN yarn install
 
-ENTRYPOINT ["node", "app.js"]
+ENTRYPOINT ["node", "cli.js"]
