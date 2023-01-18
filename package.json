@@ -1,3 +1,5 @@
+
+
 {
   "name": "wappalyzer",
   "description": "Identify technology on websites",
@@ -7,10 +9,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aliasio/wappalyzer"
-  },
-  "funding": {
-    "url": "https://github.com/sponsors/aliasio"
+    "url": "git+https://github.com/theboatymcboatface/wappalyzer.git"
   },
   "main": "index.js",
   "files": [
@@ -34,3 +33,4 @@
     "puppeteer": "^2.0.0"
   }
 }
+Footer
