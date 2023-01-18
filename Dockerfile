@@ -1,29 +1,34 @@
-FROM node:14-alpine
+FROM node:12-alpine
 
+MAINTAINER Wappalyzer <info@wappalyzer.com>
+
+ENV WAPPALYZER_ROOT /opt/wappalyzer
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 ENV CHROME_BIN /usr/bin/chromium-browser
 
-RUN apk update
-RUN apk add --no-cache \
+RUN apk update && apk add --no-cache \
 	nodejs \
-	npm \
+	nodejs-npm \
   udev \
   chromium \
-  ttf-freefont \
-  python3 \
-  make \
-  build-base \
-  git
+  ttf-freefont
 
-RUN mkdir /app && chown node /app
-USER 1000
-WORKDIR /app
+RUN mkdir -p "$WAPPALYZER_ROOT/browsers"
 
-ADD *.json /app/
-RUN npm i
+WORKDIR "$WAPPALYZER_ROOT"
 
-ADD *.js /app/
+ADD apps.json .
+ADD browser.js .
+ADD browsers/zombie.js ./browsers
+ADD browsers/puppeteer.js ./browsers
+ADD cli.js .
+ADD driver.js .
+ADD index.js .
+ADD package.json .
+ADD wappalyzer.js .
+
+RUN npm i && npm i puppeteer
 
 RUN /usr/bin/chromium-browser --version
 
-ENTRYPOINT ["node", "app.js"]
+ENTRYPOINT ["node", "cli.js"]
