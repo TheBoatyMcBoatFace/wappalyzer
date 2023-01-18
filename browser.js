@@ -16,9 +16,3 @@ class Browser {
     this.cookies = null;
   }
 }
-
-module.exports = Browser;
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
