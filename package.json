@@ -30,7 +30,7 @@
     "zombie": "^6.1.4"
   },
   "peerDependencies": {
-    "puppeteer": "^2.0.0"
+    "puppeteer": "latest"
   }
 }
 Footer
