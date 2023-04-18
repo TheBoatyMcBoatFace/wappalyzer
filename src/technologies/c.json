@@ -293,7 +293,6 @@
       "Server": "^Caddy$"
     },
     "icon": "caddy.svg",
-    "implies": "Go",
     "website": "http://caddyserver.com"
   },
   "Cafe24": {
@@ -553,6 +552,23 @@
     },
     "scriptSrc": "^https?://api\\.captchme\\.net/",
     "website": "http://captchme.com"
+  },
+  "Captivate.fm": {
+    "cats": [
+      5
+    ],
+    "description": "Captivate.fm is a podcast hosting and analytics platform that provides tools for creating, hosting, and distributing podcasts.",
+    "dom": "iframe[src*='player.captivate.fm/']",
+    "icon": "Captivate.fm.svg",
+    "js": {
+      "CAPTIVATE_PLAYER_APP_URL": ""
+    },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.captivate.fm"
   },
   "Carbon Ads": {
     "cats": [
@@ -1227,7 +1243,6 @@
   "Checkfront": {
     "cats": [
       5,
-      6,
       72
     ],
     "description": "Checkfront is a cloud-based booking management application and ecommerce platform.",
@@ -1240,6 +1255,25 @@
     "saas": true,
     "scriptSrc": "\\.checkfront\\.com/",
     "website": "https://www.checkfront.com"
+  },
+  "Checkly": {
+    "cats": [
+      13
+    ],
+    "description": "Checkly is the API and E2E monitoring platform for the modern stack: programmable, flexible and loving JavaScript.",
+    "icon": "Checkly.svg",
+    "js": {
+      "__NUXT__.config.public.apiUrl": "api\\.checklyhq\\.com"
+    },
+    "pricing": [
+      "freemium",
+      "recurring",
+      "mid"
+    ],
+    "requires": "Nuxt.js",
+    "saas": true,
+    "website": "https://www.checklyhq.com",
+    "xhr": "api\\.checklyhq\\.com/"
   },
   "Checkout.com": {
     "cats": [
@@ -1313,6 +1347,19 @@
     "saas": true,
     "scriptSrc": "/chevereto\\.js",
     "website": "https://chevereto.com"
+  },
+  "Chicago Boss": {
+    "cats": [
+      18
+    ],
+    "cookies": {
+      "_boss_session": ""
+    },
+    "description": "Chicago Boss is a web framework for Erlang.",
+    "icon": "Chicago Boss.svg",
+    "implies": "Erlang",
+    "oss": true,
+    "website": "https://github.com/ChicagoBoss/ChicagoBoss"
   },
   "Chili Piper": {
     "cats": [
@@ -1652,13 +1699,14 @@
   },
   "Classy": {
     "cats": [
-      51
+      111
     ],
-    "description": "Classy is a class library for JavaScript applications.",
+    "description": "Classy is an online fundraising platform.",
     "icon": "classy.png",
     "js": {
-      "Classy": ""
+      "Classy.clientId": ""
     },
+    "scripts": "classy\\.org",
     "website": "https://www.classy.org/"
   },
   "ClearSale": {
@@ -1902,6 +1950,22 @@
     ],
     "website": "http://clientjs.org"
   },
+  "ClientXCMS": {
+    "cats": [
+      1
+    ],
+    "description": "ClientXCMS is a content management system that provides a drag-and-drop interface, customisable templates, user and media management, and website analytics to help businesses manage their website content.",
+    "icon": "ClientXCMS.png",
+    "js": {
+      "CLIENTXCMSCurrency": ""
+    },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://clientxcms.com"
+  },
   "Clinch": {
     "cats": [
       76
@@ -1994,6 +2058,7 @@
       "NS": "\\.cloudflare\\.com",
       "SOA": "\\.cloudflare\\.com"
     },
+    "dom": "img[src*='//cdn.cloudflare']",
     "headers": {
       "Server": "^cloudflare$",
       "cf-cache-status": "",
@@ -2002,6 +2067,9 @@
     "icon": "CloudFlare.svg",
     "js": {
       "CloudFlare": ""
+    },
+    "meta": {
+      "image": "//cdn\\.cloudflare"
     },
     "website": "http://www.cloudflare.com"
   },
@@ -2043,6 +2111,20 @@
     },
     "website": "https://support.cloudflare.com/hc/en-us/articles/200168056-Understanding-Rocket-Loader"
   },
+  "Cloudflare Stream": {
+    "cats": [
+      14,
+      103
+    ],
+    "description": "Cloudflare Stream is a serverless live and on-demand video streaming platform.",
+    "dom": "iframe[src*='.cloudflarestream\\.com'], iframe[src*='iframe\\.videodelivery\\.net/']",
+    "icon": "CloudFlare.svg",
+    "pricing": [
+      "recurring",
+      "mid"
+    ],
+    "website": "https://www.cloudflare.com/products/cloudflare-stream"
+  },
   "Cloudflare Turnstile": {
     "cats": [
       16
@@ -2058,6 +2140,23 @@
     ],
     "saas": true,
     "website": "https://www.cloudflare.com/products/turnstile"
+  },
+  "Cloudflare Workers": {
+    "cats": [
+      62
+    ],
+    "description": "Cloudflare Workers is a serverless execution environment that allows you to create entirely new applications or augment existing ones without configuring or maintaining infrastructure.",
+    "icon": "Cloudflare Workers.svg",
+    "implies": [
+      "Cloudflare"
+    ],
+    "pricing": [
+      "freemium",
+      "payg"
+    ],
+    "saas": true,
+    "website": "https://workers.cloudflare.com",
+    "xhr": "\\.workers\\.dev"
   },
   "Cloudflare Zaraz": {
     "cats": [
@@ -2137,6 +2236,26 @@
       "poa"
     ],
     "website": "https://cloudinary.com"
+  },
+  "Cloudrexx": {
+    "cats": [
+      1
+    ],
+    "description": "Cloudrexx is a proprietary content management system that provides customisable templates and built-in modules for managing content, ecommerce, events, newsletters, and more, along with tools for SEO, social media integration, and multilingual support.",
+    "icon": "Cloudrexx.svg",
+    "implies": [
+      "PHP",
+      "MySQL"
+    ],
+    "meta": {
+      "generator": "^cloudrexx$"
+    },
+    "pricing": [
+      "poa",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.cloudrexx.com"
   },
   "Cloudways": {
     "cats": [
@@ -2298,7 +2417,7 @@
   },
   "CodeMirror": {
     "cats": [
-      19
+      20
     ],
     "description": "CodeMirror is a JavaScript component that provides a code editor in the browser.",
     "icon": "CodeMirror.png",
@@ -2553,6 +2672,26 @@
     "scriptSrc": "/wp-content/themes/travelify/",
     "website": "https://colorlib.com/wp/themes/travelify"
   },
+  "Combahton FlowShield": {
+    "cats": [
+      16
+    ],
+    "cookies": {
+      "FLOWPROXY-ORIGIN": ""
+    },
+    "description": "Combahton FlowShield is a network security solution designed to protect networks and servers from various cyber threats, including DDoS attacks, malware, and other types of malicious traffic.",
+    "headers": {
+      "Server": "antiddos/flowproxy",
+      "X-Flowproxy-Author": ""
+    },
+    "icon": "Combahton.svg",
+    "pricing": [
+      "recurring",
+      "mid"
+    ],
+    "saas": true,
+    "website": "https://combahton.net"
+  },
   "Combeenation": {
     "cats": [
       76
@@ -2565,6 +2704,43 @@
     ],
     "saas": true,
     "website": "https://www.combeenation.com"
+  },
+  "Combodo iTop": {
+    "cats": [
+      13,
+      19
+    ],
+    "description": "Combodo iTop is an open-source IT service management (ITSM) and IT operations management (ITOM) platform developed by Combodo, a software company based in France.",
+    "dom": {
+      "a[href*='combodo.com/itop'] > img": {
+        "attributes": {
+          "title": "iTop\\sVersion\\s([\\d\\.]+)\\;version:\\1"
+        }
+      }
+    },
+    "icon": "Combodo iTop.svg",
+    "oss": true,
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "website": "https://www.combodo.com/itop-193"
+  },
+  "Comeet": {
+    "cats": [
+      5,
+      101
+    ],
+    "description": "Comeet is an Collaborative Recruiting, and Applicant Tracking System.",
+    "icon": "comeet.svg",
+    "js": {
+      "COMEET": "",
+      "comeetInit": ""
+    },
+    "pricing": [
+      "poa"
+    ],
+    "website": "https://www.comeet.com"
   },
   "Comm100": {
     "cats": [
@@ -2660,6 +2836,34 @@
     "scriptSrc": "cdn\\.commerce7\\.com",
     "website": "https://commerce7.com",
     "xhr": "api\\.commerce7\\.com"
+  },
+  "Commercelayer": {
+    "cats": [
+      6
+    ],
+    "description": "Commercelayer is a headless ecommerce platform that permits businesses to create customisable and scalable online shopping experiences via an API-first architecture that allows developers to use any programming language or framework for building ecommerce sites and applications.",
+    "icon": "commercelayer.svg",
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://commercelayer.io",
+    "xhr": "\\.commercelayer\\.io"
+  },
+  "Community Funded": {
+    "cats": [
+      111
+    ],
+    "description": "Community Funded is a digital fundraising and engagement platform.",
+    "dom": "a[href*='//give.communityfunded.com/']",
+    "icon": "Community Funded.png",
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "scriptSrc": "//give\\.communityfunded\\.com/",
+    "website": "https://www.communityfunded.com"
   },
   "Complianz": {
     "cats": [
@@ -2921,7 +3125,7 @@
     ],
     "saas": true,
     "website": "http://www.contentful.com",
-    "xhr": "cdn\\.contentful\\.com"
+    "xhr": "(?:cdn|graphql)\\.contentful\\.com"
   },
   "Contently": {
     "cats": [
@@ -2960,8 +3164,14 @@
       1
     ],
     "description": "Contentstack is a headless CMS software designed to help businesses deliver personalised content experiences to audiences via multiple channels.",
-    "dom": "img[src*='images.contentstack.io']",
-    "icon": "Contentstack.png",
+    "dom": {
+      "img[src*='contentstack']": {
+        "attributes": {
+          "src": "\\.contentstack\\.(?:io|com)/"
+        }
+      }
+    },
+    "icon": "Contentstack.svg",
     "pricing": [
       "high",
       "recurring"
@@ -3870,6 +4080,24 @@
     ],
     "website": "https://crypto-loot.com/"
   },
+  "Crystallize": {
+    "cats": [
+      6
+    ],
+    "description": "Crystallize is an ecommerce platform that offers a headless ecommerce solution for businesses.",
+    "dom": "link[href*='.crystallize.com']",
+    "icon": "Crystallize.svg",
+    "js": {
+      "__crystallizeConfig.API_URL": "\\.crystallize\\.com"
+    },
+    "pricing": [
+      "freemium",
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://crystallize.com"
+  },
   "CubeCart": {
     "cats": [
       6
@@ -4118,19 +4346,6 @@
     "scriptSrc": "\\.scorecardresearch\\.com/beacon\\.js|COMSCORE\\.beacon",
     "website": "http://comscore.com"
   },
-  "commercelayer": {
-    "cats": [
-      6
-    ],
-    "icon": "commercelayer.svg",
-    "pricing": [
-      "mid",
-      "recurring"
-    ],
-    "saas": true,
-    "website": "https://commercelayer.io",
-    "xhr": "\\.commercelayer\\.io"
-  },
   "commercetools": {
     "cats": [
       6
@@ -4138,6 +4353,10 @@
     "description": "commercetools is a headless commerce platform.",
     "dom": "link[href*='.commercetools.com/'], body[data-commerce-tools-host*='.commercetools.com']",
     "icon": "commercetools.svg",
+    "js": {
+      "COMMERCE_TOOLS_HOST_ATT": "",
+      "COMMERCE_TOOLS_PROJECT_KEY_ATT": ""
+    },
     "pricing": [
       "poa",
       "recurring"

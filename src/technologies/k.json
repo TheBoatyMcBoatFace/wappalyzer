@@ -94,6 +94,23 @@
     "scriptSrc": "katex(@|/)[0-9.]+(?:/dist)?/katex(?:\\.min)?\\.(mjs|js|css)\\;version:\\1",
     "website": "https://katex.org/"
   },
+  "Kadence WP Blocks": {
+    "cats": [
+      87
+    ],
+    "description": "Kadence WP Blocks is a plugin for WordPress that provides a collection of custom blocks for the Gutenberg editor, allowing users to create custom layouts and designs for their website without needing to know how to code.",
+    "dom": "link[href*='/wp-content/plugins/kadence-blocks/']",
+    "icon": "Kadence WP.svg",
+    "implies": "Gutenberg",
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "requires": "WordPress",
+    "scriptSrc": "/wp-content/plugins/kadence-blocks/dist/.+/kb-form-block\\.min\\.js(?:\\?ver=([\\d\\.]+))?\\;version:\\1",
+    "website": "https://www.kadencewp.com/kadence-blocks/"
+  },
   "Kadence WP Kadence": {
     "cats": [
       80
@@ -237,6 +254,28 @@
     "scriptSrc": "cdn\\.mykamva\\.ir",
     "website": "https://kamva.ir"
   },
+  "Kapix Studio": {
+    "cats": [
+      51
+    ],
+    "description": "Kapix Studio is a no-code platform that lets anyone build web apps without writing any code.",
+    "icon": "Kapix.svg",
+    "implies": [
+      "Vite",
+      "TypeScript"
+    ],
+    "js": {
+      "__INITIAL_STATE__": "KapixNoCode",
+      "kapixVersion": "([\\d\\.]+)\\;version:\\1"
+    },
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://studio.kapix.fr"
+  },
   "Kapture CRM": {
     "cats": [
       52,
@@ -317,6 +356,19 @@
     ],
     "website": "https://www.keendelivery.com"
   },
+  "Keen-Slider": {
+    "cats": [
+      59
+    ],
+    "description": "Keen-Slider is a free library agnostic touch slider with native touch/swipe behavior.",
+    "dom": "div.keen-slider, div.keen-slider__slide",
+    "icon": "keen-slider.svg",
+    "js": {
+      "KeenSlider": ""
+    },
+    "oss": true,
+    "website": "https://keen-slider.io"
+  },
   "Kemal": {
     "cats": [
       18,
@@ -347,6 +399,7 @@
       1
     ],
     "cookies": {
+      "CMSCookieLevel": "",
       "CMSPreferredCulture": ""
     },
     "cpe": "cpe:2.3:a:kentico:kentico_cms:*:*:*:*:*:*:*:*",
@@ -362,7 +415,10 @@
       "poa"
     ],
     "saas": true,
-    "scriptSrc": "/CMSPages/GetResource\\.ashx",
+    "scriptSrc": [
+      "/CMSPages/GetResource\\.ashx",
+      "/kentico\\.resource"
+    ],
     "website": "http://www.kentico.com"
   },
   "Keptify": {
@@ -710,6 +766,7 @@
     "description": "Klevu is a highly advanced AI-Powered search solution for ecommerce platforms.",
     "icon": "Klevu.png",
     "js": {
+      "klevu.version": "([\\d\\.]+)\\;version:\\1",
       "klevu_apiKey": "",
       "klevu_layout": "",
       "klevu_sessionId": ""
@@ -771,7 +828,7 @@
   "Ko-fi": {
     "cats": [
       5,
-      41
+      111
     ],
     "description": "Ko-fi is an online platform that helps content creators get the financial support.",
     "dom": "a[href*='ko-fi.com/'][target='_blank']",
@@ -799,6 +856,26 @@
     "icon": "Koa.png",
     "implies": "Node.js",
     "website": "http://koajs.com"
+  },
+  "Koala": {
+    "cats": [
+      10,
+      53
+    ],
+    "description": "Koala is an analytical product with CRM features that helps businesses efficiently identify and track prospects, providing valuable insights and streamlining the sales process.",
+    "icon": "Koala.svg",
+    "js": {
+      "KoalaSDK": ""
+    },
+    "pricing": [
+      "freemium",
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "cdn\\.getkoala\\.com/",
+    "website": "https://getkoala.com/",
+    "xhr": "api\\.getkoala\\.com"
   },
   "Koala Framework": {
     "cats": [

@@ -255,7 +255,6 @@
     "description": "RankMath SEO is a search engine optimisation plugin for WordPress.",
     "dom": "link[href*='/wp-content/plugins/seo-by-rank-math/'], script.rank-math-schema-pro, script.rank-math-schema",
     "icon": "RankMath SEO.svg",
-    "implies": "Google Analytics\\;version:4",
     "pricing": [
       "freemium",
       "low",
@@ -360,6 +359,26 @@
     "saas": true,
     "scriptSrc": "code\\.rateparity\\.com/",
     "website": "https://www.rateparity.com"
+  },
+  "Rawabit": {
+    "cats": [
+      51
+    ],
+    "cookies": {
+      "rawabit_session": ""
+    },
+    "description": "Rawabit is a website builder that lets small businesses design landing pages, modify sections, and embed content links using a drag and drop editor.",
+    "icon": "Rawabit.svg",
+    "meta": {
+      "powered-by": "^Rawabit$"
+    },
+    "pricing": [
+      "freemium",
+      "recurring",
+      "low"
+    ],
+    "saas": true,
+    "website": "https://www.rawabit.me"
   },
   "Raychat": {
     "cats": [
@@ -546,8 +565,8 @@
     "cats": [
       12
     ],
-    "description": "Official React bindings for Redux",
-    "icon": "Redux.png",
+    "description": "React Redux is the official React binding for Redux.",
+    "icon": "Redux.svg",
     "implies": [
       "React",
       "Redux"
@@ -590,6 +609,16 @@
     "saas": true,
     "url": "^https?//.+\\.reactiveonline\\.io",
     "website": "https://reactiveonline.io"
+  },
+  "ReadAloud": {
+    "cats": [
+      5
+    ],
+    "description": "The SiteSpeaker text-to-speech widget is embedded into your posts and give users an alternate way to consume your content as audio.",
+    "dom": "div#ra-player, div[data-skin*='assets\\.sitespeaker\\.link/embed/skins']",
+    "icon": "default.svg",
+    "website": "https://www.readaloudwidget.com",
+    "xhr": "assets\\.sitespeaker\\.link"
   },
   "ReadMe": {
     "cats": [
@@ -922,6 +951,27 @@
     "saas": true,
     "website": "https://redcart.pl"
   },
+  "RedShop": {
+    "cats": [
+      6
+    ],
+    "description": "RedShop provides a platform for SMEs to manage their ecommerce business.",
+    "dom": "link[href*='//redshop.s3.amazonaws.com/']",
+    "icon": "RedShop.png",
+    "implies": [
+      "Amazon S3",
+      "TypeScript",
+      "Next.js",
+      "React"
+    ],
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.redshop.io"
+  },
   "Reddit": {
     "cats": [
       2
@@ -996,11 +1046,11 @@
       12
     ],
     "description": "Redux is a predictable state container for JavaScript applications.",
-    "icon": "Redux.png",
+    "icon": "Redux.svg",
     "scriptSrc": [
       "/redux(@|/)([\\d.]+)(?:/[a-z]+)?/redux(?:.min)?\\.js\\;version:\\2"
     ],
-    "website": "https://redux.js.org/"
+    "website": "https://redux.js.org"
   },
   "RedwoodJS": {
     "cats": [
@@ -1169,6 +1219,23 @@
     ],
     "website": "https://www.relaiscolis.com"
   },
+  "Relewise": {
+    "cats": [
+      76
+    ],
+    "description": "Relewise is a platform that uses personalisation technology to provide customised online experiences through personalised search and recommendations.",
+    "dom": "link[href*='api.relewise.com/']",
+    "icon": "Relewise.svg",
+    "js": {
+      "relewiseConfig": "",
+      "relewiseTracking": ""
+    },
+    "pricing": [
+      "payg"
+    ],
+    "saas": true,
+    "website": "https://relewise.com"
+  },
   "Remarkable Commerce": {
     "cats": [
       6
@@ -1199,6 +1266,83 @@
     },
     "oss": true,
     "website": "https://remix.run/"
+  },
+  "Remixd": {
+    "cats": [
+      5
+    ],
+    "description": "Remixd is a platform that enables podcast creators to efficiently produce and share their podcasts with a worldwide audience. The platform provides various tools and features to support podcast creation, hosting, and distribution, such as podcast hosting, analytics, monetisation, and social media integration.",
+    "icon": "remixd.svg",
+    "scriptSrc": "tags\\.remixd\\.com/player",
+    "website": "https://www.remixd.com"
+  },
+  "Render": {
+    "cats": [
+      62
+    ],
+    "description": "Render is a cloud computing platform that provides a wide range of services, including web hosting, cloud computing, and application development. Render offers several hosting options, including static site hosting, web application hosting, and managed databases.",
+    "headers": {
+      "x-render-origin-server": "Render"
+    },
+    "icon": "Render.svg",
+    "pricing": [
+      "low",
+      "freemium",
+      "payg",
+      "recurring"
+    ],
+    "website": "https://render.com"
+  },
+  "Render Better": {
+    "cats": [
+      92,
+      100
+    ],
+    "description": "Render Better is automated site speed and core web vital optimisation platform for Shopify.",
+    "dns": {
+      "CNAME": "\\.renderbetter\\.app"
+    },
+    "icon": "renderbetter.svg",
+    "js": {
+      "renderbetter": ""
+    },
+    "requires": "Shopify",
+    "website": "https://www.renderbetter.com"
+  },
+  "Replicache": {
+    "cats": [
+      12,
+      23
+    ],
+    "description": "Replicache is a JavaScript framework for building high-performance, offline-capable, collaborative web apps.",
+    "headers": {
+      "x-replicache-requestid": ""
+    },
+    "icon": "Replicache.svg",
+    "pricing": [
+      "freemium",
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://replicache.dev/"
+  },
+  "Replit": {
+    "cats": [
+      47
+    ],
+    "description": "Replit is a platform for creating and sharing software.",
+    "headers": {
+      "expect-ct": "\\.repl\\.it/",
+      "replit-cluster": ""
+    },
+    "icon": "Replit.svg",
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "website": "https://replit.com"
   },
   "Reputon": {
     "cats": [
@@ -1494,6 +1638,25 @@
     "saas": true,
     "website": "https://returnly.com"
   },
+  "Retype": {
+    "cats": [
+      57
+    ],
+    "description": "Retype is an open-source static site generator built with Node.js that allows users to create and manage websites with ease using Markdown as the primary content format.",
+    "icon": "retype.svg",
+    "implies": "Node.js",
+    "meta": {
+      "generator": "Retype\\s([\\d\\.]+)?\\;version:\\1"
+    },
+    "oss": true,
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring",
+      "onetime"
+    ],
+    "website": "https://retype.com"
+  },
   "RevJet": {
     "cats": [
       36
@@ -1618,6 +1781,23 @@
     "icon": "RevolverMaps.svg",
     "scriptSrc": "\\.revolvermaps\\.com",
     "website": "https://www.revolvermaps.com"
+  },
+  "Revv": {
+    "cats": [
+      111
+    ],
+    "description": "Revv is a lead optimisation and donation platform.",
+    "icon": "Revv.png",
+    "meta": {
+      "revv-api-domain": ""
+    },
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://revv.com"
   },
   "Revy": {
     "cats": [
@@ -1854,6 +2034,19 @@
     ],
     "saas": true,
     "website": "https://rive.app"
+  },
+  "RoadRunner": {
+    "cats": [
+      22
+    ],
+    "description": "RoadRunner is a high-performance PHP application server, load balancer, and process manager written in Golang.",
+    "headers": {
+      "Server": "RoadRunner"
+    },
+    "icon": "RoadRunner.svg",
+    "implies": "PHP",
+    "oss": true,
+    "website": "https://roadrunner.dev"
   },
   "Roadiz CMS": {
     "cats": [

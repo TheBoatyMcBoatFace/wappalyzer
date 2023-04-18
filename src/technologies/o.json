@@ -1,4 +1,19 @@
 {
+  "OTYS": {
+    "cats": [
+      101
+    ],
+    "description": "OTYS is a Dutch company that specialises in providing recruitment and staffing agencies with software solutions to manage their workflows, including applicant tracking systems, job board integrations, and candidate sourcing tools.",
+    "icon": "OTYS.svg",
+    "js": {
+      "OTYS.siteId": "",
+      "otysSelect": ""
+    },
+    "pricing": [
+      "poa"
+    ],
+    "website": "https://www.otys.nl"
+  },
   "OVHcloud": {
     "cats": [
       62,
@@ -293,19 +308,20 @@
   },
   "Odoo": {
     "cats": [
-      1,
-      6
+      1
     ],
     "cpe": "cpe:2.3:a:odoo:odoo:*:*:*:*:*:*:*:*",
     "description": "Odoo is business management software which includes CRM, ecommerce, billing, accounting, manufacturing, warehouse, project management, and inventory management.",
     "html": "<link[^>]* href=[^>]+/web/css/(?:web\\.assets_common/|website\\.assets_frontend/)\\;confidence:25",
-    "icon": "Odoo.png",
+    "icon": "Odoo.svg",
     "implies": [
       "Python",
       "PostgreSQL",
-      "Node.js",
       "Less"
     ],
+    "js": {
+      "odoo.session_info": ""
+    },
     "meta": {
       "generator": "Odoo"
     },
@@ -930,6 +946,19 @@
     "oss": true,
     "website": "https://man.openbsd.org/httpd.8"
   },
+  "OpenCV": {
+    "cats": [
+      59
+    ],
+    "description": "OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library.",
+    "icon": "OpenCV.svg",
+    "implies": "WebAssembly",
+    "js": {
+      "opencvIsReady": ""
+    },
+    "oss": true,
+    "website": "https://opencv.org"
+  },
   "OpenCart": {
     "cats": [
       6
@@ -938,8 +967,14 @@
       "OCSESSID": ""
     },
     "cpe": "cpe:2.3:a:opencart:opencart:*:*:*:*:*:*:*:*",
-    "icon": "OpenCart.png",
-    "implies": "PHP",
+    "description": "OpenCart is a free and open-source ecommerce platform used for creating and managing online stores. It is written in PHP and uses a MySQL database to store information.",
+    "dom": "link[href*='catalog/view/theme/rgen-opencart/']",
+    "icon": "OpenCart.svg",
+    "implies": [
+      "PHP",
+      "MySQL"
+    ],
+    "oss": true,
     "website": "http://www.opencart.com"
   },
   "OpenCities": {
@@ -1082,6 +1117,19 @@
     "icon": "OpenStreetMap.svg",
     "oss": true,
     "website": "https://www.openstreetmap.org"
+  },
+  "OpenSwoole": {
+    "cats": [
+      18
+    ],
+    "description": "OpenSwoole is a high-performance, asynchronous, event-driven, coroutine-based PHP framework.",
+    "headers": {
+      "Server": "OpenSwoole(?:/([\\d.]+))?\\;version:\\1"
+    },
+    "icon": "OpenSwoole.svg",
+    "implies": "PHP",
+    "oss": true,
+    "website": "https://openswoole.com"
   },
   "OpenTable": {
     "cats": [
@@ -1402,10 +1450,12 @@
     "cats": [
       19
     ],
+    "description": "Oracle Dynamic Monitoring Service is a feature of Oracle WebLogic Server that provides real-time monitoring and diagnostic capabilities for Java applications running on the WebLogic Server.",
     "headers": {
       "x-oracle-dms-ecid": ""
     },
     "icon": "Oracle.svg",
+    "implies": "Oracle WebLogic Server",
     "website": "http://oracle.com"
   },
   "Oracle HTTP Server": {
@@ -1469,6 +1519,19 @@
     },
     "icon": "Oracle.svg",
     "website": "http://oracle.com"
+  },
+  "Oracle WebLogic Server": {
+    "cats": [
+      22
+    ],
+    "cpe": "cpe:2.3:a:bea:weblogic_server:*:*:*:*:*:*:*:*",
+    "description": "Oracle WebLogic Server is a Java-based application server that provides a platform for developing, deploying, and running enterprise-level Java applications.",
+    "icon": "Oracle.svg",
+    "implies": "Java",
+    "pricing": [
+      "poa"
+    ],
+    "website": "https://www.oracle.com/java/weblogic/"
   },
   "Orankl": {
     "cats": [

@@ -1,4 +1,25 @@
 {
+  "E-monsite": {
+    "cats": [
+      1
+    ],
+    "description": "E-monsite is a web-based platform that allows users to create and customise their own websites using a range of templates and features, without requiring coding or technical skills.",
+    "icon": "E-monsite.svg",
+    "implies": [
+      "Symfony",
+      "MySQL"
+    ],
+    "meta": {
+      "generator": "^e-monsite\\s\\(e-monsite\\.com\\)$"
+    },
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.e-monsite.com"
+  },
   "EC-CUBE": {
     "cats": [
       6
@@ -150,6 +171,28 @@
     "website": "https://ex.co",
     "xhr": "prd-collector-anon\\.ex\\.co"
   },
+  "EZproxy": {
+    "cats": [
+      22,
+      64
+    ],
+    "description": "EZproxy is a web server and a reverse proxy that is usually used by libraries as a reverse proxy in front of electronic educational resources databases (e.g.: Scopus, PubMed, or Web of Science) in order to provide authentication and protect privacy.",
+    "excludes": [
+      "Apache HTTP Server",
+      "Nginx"
+    ],
+    "headers": {
+      "server": "^EZproxy$"
+    },
+    "icon": "default.svg",
+    "pricing": [
+      "low",
+      "recurring",
+      "poa"
+    ],
+    "saas": true,
+    "website": "https://www.oclc.org/en/ezproxy.html"
+  },
   "Easy Hide PayPal": {
     "cats": [
       100
@@ -164,6 +207,26 @@
     "saas": true,
     "scriptSrc": "easyhide\\.herculesapps\\.com/",
     "website": "https://apps.shopify.com/easyhide"
+  },
+  "Easy Orders": {
+    "cats": [
+      6
+    ],
+    "description": "Easy Orders is an ecommerce platform that offers a pricing plan where users can create their online store and pay a fee of 0.5 EGP per order.",
+    "dom": "img[src*='easyorders.fra1.digitaloceanspaces.com/'], link[href*='easyorders.fra1.digitaloceanspaces.com/']",
+    "icon": "Easy Orders.png",
+    "implies": [
+      "PostgreSQL",
+      "Go",
+      "Node.js"
+    ],
+    "pricing": [
+      "payg"
+    ],
+    "requires": "Next.js",
+    "saas": true,
+    "website": "https://www.easy-orders.net",
+    "xhr": "api\\.easy-orders\\.net/"
   },
   "Easy Redirects": {
     "cats": [
@@ -372,6 +435,24 @@
     "oss": true,
     "website": "https://editorjs.io"
   },
+  "Efilli": {
+    "cats": [
+      67
+    ],
+    "description": "Efilli is a tool used to manage cookies on websites, providing users with data privacy control through GDPR compliance.",
+    "icon": "Efilli.svg",
+    "js": {
+      "EFILLI_GLOBAL_OPTIONS": "",
+      "Efilli": "",
+      "efilli.__cookieBlocker": ""
+    },
+    "pricing": [
+      "recurring",
+      "poa"
+    ],
+    "saas": true,
+    "website": "https://efilli.com"
+  },
   "Eggplant": {
     "cats": [
       78
@@ -524,6 +605,21 @@
     },
     "website": "http://eleanor-cms.ru"
   },
+  "Element": {
+    "cats": [
+      52
+    ],
+    "description": "Element is a Matrix-based end-to-end encrypted messenger and secure collaboration app.",
+    "icon": "elementio.svg",
+    "meta": {
+      "application-name": "^Element$"
+    },
+    "pricing": [
+      "payg",
+      "low"
+    ],
+    "website": "https://element.io"
+  },
   "Element UI": {
     "cats": [
       12
@@ -546,6 +642,9 @@
     "js": {
       "elementorFrontend.getElements": "",
       "elementorFrontendConfig.version": "([\\d\\.]+)\\;version:\\1"
+    },
+    "meta": {
+      "generator": "^Elementor\\s([\\d\\.]+)\\;version:\\1"
     },
     "pricing": [
       "freemium",
@@ -657,6 +756,16 @@
     "scriptSrc": "\\.elfsight\\.com/",
     "website": "https://elfsight.com"
   },
+  "Elixir": {
+    "cats": [
+      27
+    ],
+    "description": "Elixir is a dynamic, functional language designed for building scalable and maintainable applications.",
+    "icon": "Elixir.svg",
+    "implies": "Erlang",
+    "oss": true,
+    "website": "https://elixir-lang.org"
+  },
   "Ellucian CRM Recruit": {
     "cats": [
       53,
@@ -679,21 +788,37 @@
       27,
       12
     ],
+    "description": "Elm is a statically typed functional programming language created by Evan Czaplicki in 2012 for building web applications.",
     "icon": "elm.svg",
     "js": {
       "Elm.Main.embed": "\\;version:0.18",
       "Elm.Main.init": "\\;version:0.19"
     },
+    "oss": true,
     "website": "https://elm-lang.org/"
   },
   "Elm-ui": {
     "cats": [
       66
     ],
+    "description": "Elm-UI is a library for creating user interfaces in Elm programming language. It provides a set of functions and abstractions for building responsive and reusable UI components, such as buttons, forms, and layouts, in a declarative and type-safe way.",
     "html": "<style>[\\s\\S]*\\.explain > \\.s[\\s\\S]*\\.explain > \\.ctr > \\.s",
     "icon": "elm.svg",
     "implies": "Elm",
     "website": "https://github.com/mdgriffith/elm-ui"
+  },
+  "Eloomi": {
+    "cats": [
+      21
+    ],
+    "description": "Eloomi is a cloud-based learning management system (LMS) and performance management platform.",
+    "icon": "Eloomi.png",
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "scriptSrc": "//cdn\\.eloomi\\.com/",
+    "website": "https://eloomi.com"
   },
   "Eloqua": {
     "cats": [
@@ -717,6 +842,24 @@
     },
     "scriptSrc": "elqCfg\\.js",
     "website": "http://eloqua.com"
+  },
+  "EmailJS": {
+    "cats": [
+      75
+    ],
+    "description": "EmailJS is a cloud-based email delivery service that allows you to send emails directly from your client-side JavaScript code without the need for a server-side implementation.",
+    "icon": "EmailJS.svg",
+    "js": {
+      "emailjs.sendForm": ""
+    },
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "([\\d\\.]+)?(?:/dist)?/email\\.min\\.js\\;version:\\1",
+    "website": "https://www.emailjs.com"
   },
   "Emarsys": {
     "cats": [
@@ -1541,6 +1684,25 @@
     "saas": true,
     "scriptSrc": "expertrec\\.com/api/js/ci_common\\.js\\?id=.*",
     "website": "https://www.expertrec.com/"
+  },
+  "Expivi": {
+    "cats": [
+      105
+    ],
+    "description": "Expivi specialises in 3D visualisation technology for ecommerce stores.",
+    "dom": "iframe[src*='.expivi.net/']",
+    "icon": "Expivi.svg",
+    "js": {
+      "ExpiviComponent": "",
+      "expivi": ""
+    },
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.expivi\\.(?:com|net)/",
+    "website": "https://www.expivi.com"
   },
   "Exponea": {
     "cats": [

@@ -27,7 +27,6 @@
       "PDFJS": "",
       "PDFJS.version": "^(.+)$\\;version:\\1",
       "_pdfjsCompatibilityChecked": "",
-      "pdfjs-dist/build/pdf.version": "^(.+)$\\;version:\\1",
       "pdfjsDistBuildPdf.version": "^(.+)$\\;version:\\1",
       "pdfjsLib.version": "^(.+)$\\;version:\\1"
     },
@@ -287,6 +286,21 @@
     "scriptSrc": "cdn\\.pagefly\\.io",
     "website": "https://pagefly.io"
   },
+  "Pagefai CMS": {
+    "cats": [
+      1
+    ],
+    "description": "Pagefai is a cloud-based platform that offers software-as-a-service solutions to businesses, including the Pagefai CMS which provides ecommerce functionality and other business tools.",
+    "headers": {
+      "x-powered-by": "PAGEFAI CMS"
+    },
+    "icon": "Pagefai.png",
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "website": "https://www.pagefai.com"
+  },
   "Pagekit": {
     "cats": [
       1
@@ -436,6 +450,21 @@
     },
     "scripts": "var\\slink\\s=\\s'www\\.parkingcrew\\.net'",
     "website": "https://www.parkingcrew.com"
+  },
+  "Parmin Cloud": {
+    "cats": [
+      63
+    ],
+    "description": "Parmin Cloud operates in the field of cloud services.",
+    "headers": {
+      "x-powered-by": "^ParminCloud$"
+    },
+    "icon": "Parmin Cloud.svg",
+    "pricing": [
+      "poa",
+      "payg"
+    ],
+    "website": "https://parmin.cloud"
   },
   "Pars Elecom Portal": {
     "cats": [
@@ -766,6 +795,24 @@
     "saas": true,
     "website": "https://www.paylocity.com"
   },
+  "Paymenter": {
+    "cats": [
+      1,
+      6
+    ],
+    "cookies": {
+      "paymenter_session": ""
+    },
+    "description": "Paymenter is an open-source webshop solution for hosting companies.",
+    "icon": "Paymenter.png",
+    "implies": [
+      "PHP",
+      "MySQL",
+      "Tailwind CSS"
+    ],
+    "oss": true,
+    "website": "https://paymenter.org"
+  },
   "Paysafe": {
     "cats": [
       41
@@ -953,9 +1000,26 @@
     "scriptSrc": "/assets/themes/perfex/js/global\\.min\\.js(?:\\?v=(\\d+(?:\\.\\d+)+))?\\;version:\\1",
     "website": "https://www.perfexcrm.com"
   },
+  "Perfmatters": {
+    "cats": [
+      87,
+      92
+    ],
+    "description": "Perfmatters is a performance optimisation plugin for WordPress websites.",
+    "icon": "Perfmatters.svg",
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "requires": "WordPress",
+    "saas": true,
+    "scriptSrc": "/wp-content/(?:plugins|cache|uploads)/perfmatters/",
+    "website": "https://perfmatters.io"
+  },
   "Performance Lab": {
     "cats": [
-      87
+      87,
+      92
     ],
     "description": "Performance plugin from the WordPress Performance Group, which is a collection of standalone performance modules.",
     "icon": "Performance Lab.svg",
@@ -1003,6 +1067,20 @@
     "saas": true,
     "scriptSrc": "/integrations/embed/periodic-embed-resize\\.js",
     "website": "https://periodic.is"
+  },
+  "Peripl": {
+    "cats": [
+      10
+    ],
+    "description": "Peripl is a French software company that provides cloud-based software solutions for business management, including accounting, invoicing, payroll, and project management.",
+    "dom": "script#peripl-script",
+    "icon": "Peripl.png",
+    "pricing": [
+      "recurring",
+      "low"
+    ],
+    "saas": true,
+    "website": "https://www.peripl.fr"
   },
   "Perl": {
     "cats": [
@@ -1157,13 +1235,37 @@
       "Webpack",
       "Node.js"
     ],
-    "js": {
-      "Phoenix": ""
-    },
     "meta": {
       "generator": "^phoenix"
     },
     "website": "https://github.com/Sazito/phoenix/"
+  },
+  "Phoenix Framework": {
+    "cats": [
+      18
+    ],
+    "description": "Phoenix Framework is an open-source web application framework built using the Elixir programming language.",
+    "icon": "Phoenix Framework.svg",
+    "implies": "Elixir",
+    "js": {
+      "Phoenix.Channel": ""
+    },
+    "oss": true,
+    "website": "https://www.phoenixframework.org"
+  },
+  "Phoenix LiveView": {
+    "cats": [
+      18
+    ],
+    "description": "Phoenix LiveView is a library that brings live, interactive, real-time user experiences to your Phoenix applications.",
+    "dom": "div[data-phx-session]",
+    "icon": "Phoenix Framework.svg",
+    "implies": "Phoenix Framework",
+    "js": {
+      "liveSocket.socket": ""
+    },
+    "oss": true,
+    "website": "https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html"
   },
   "Phoenix Site": {
     "cats": [
@@ -1351,6 +1453,16 @@
     ],
     "website": "https://trypico.com"
   },
+  "Pico CSS": {
+    "cats": [
+      66
+    ],
+    "description": "Pico CSS is a minimal CSS framework for semantic HTML, without using classes.",
+    "dom": "link[href*='/pico.min.css']",
+    "icon": "Pico CSS.svg",
+    "oss": true,
+    "website": "https://picocss.com"
+  },
   "Picreel": {
     "cats": [
       77,
@@ -1512,6 +1624,25 @@
     ],
     "saas": true,
     "website": "https://www.pipedrive.com/"
+  },
+  "Piwigo": {
+    "cats": [
+      7
+    ],
+    "description": "Piwigo is an open-source photo management software designed for creating and managing online photo galleries.",
+    "icon": "Piwigo.svg",
+    "implies": "MySQL",
+    "meta": {
+      "generator": "^Piwigo\\s"
+    },
+    "oss": true,
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://piwigo.com"
   },
   "Piwik PRO Core": {
     "cats": [
@@ -1690,6 +1821,24 @@
     },
     "website": "http://planetplanet.org"
   },
+  "Plasmic": {
+    "cats": [
+      51
+    ],
+    "description": "Plasmic is a visual, no-code headless page/content builder for any website or codebase.",
+    "dom": "div.plasmic_default__all",
+    "icon": "Plasmic.svg",
+    "js": {
+      "__NEXT_DATA__.props.pageProps.plasmicData": ""
+    },
+    "pricing": [
+      "freemium",
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.plasmic.app"
+  },
   "Platform.sh": {
     "cats": [
       62
@@ -1713,6 +1862,20 @@
     },
     "icon": "PlatformOS.svg",
     "website": "https://www.platform-os.com"
+  },
+  "Platforma LP": {
+    "cats": [
+      51
+    ],
+    "description": "Platforma LP is a web design and development platform that provides ready-to-use website templates for various industries and purposes. It is a collection of over 500 website templates that can be customised and edited according to user needs.",
+    "icon": "Platforma LP.png",
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.lpcdn\\.site/",
+    "website": "https://platformalp.ru"
   },
   "Plausible": {
     "cats": [
@@ -1824,6 +1987,26 @@
     },
     "scriptSrc": "https?://cdn\\.plot\\.ly/plotly",
     "website": "https://plot.ly/javascript/"
+  },
+  "Plug&Pay": {
+    "cats": [
+      6,
+      41
+    ],
+    "cookies": {
+      "plug_pay_session": ""
+    },
+    "description": "Plug&Pay is a payment processor that provides payment solutions for ecommerce businesses.",
+    "icon": "Plug and Pay.png",
+    "implies": [
+      "Laravel"
+    ],
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://plugandpay.nl"
   },
   "Plyr": {
     "cats": [
@@ -2101,6 +2284,24 @@
     ],
     "website": "https://www.postaffiliatepro.com"
   },
+  "PostHog": {
+    "cats": [
+      10
+    ],
+    "description": "PostHog is the open-source, all-in-one product analytics platform.",
+    "icon": "PostHog.svg",
+    "js": {
+      "posthog": ""
+    },
+    "oss": true,
+    "pricing": [
+      "freemium",
+      "payg"
+    ],
+    "saas": true,
+    "scriptSrc": "app\\.posthog\\.com/",
+    "website": "https://posthog.com"
+  },
   "PostNL": {
     "cats": [
       99
@@ -2182,6 +2383,23 @@
     "scriptSrc": "sdk\\.postscript\\.io/",
     "website": "https://www.postscript.io"
   },
+  "Potions": {
+    "cats": [
+      76
+    ],
+    "description": "Potions is a personalisation technology for customising the ecommerce experience for site visitors without the use of cookies.",
+    "icon": "Potions.svg",
+    "js": {
+      "potions.version": "([\\d\\.]+)\\;version:\\1"
+    },
+    "pricing": [
+      "recurring",
+      "poa"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.get-potions\\.com/",
+    "website": "https://get-potions.com"
+  },
   "PowerReviews": {
     "cats": [
       90
@@ -2194,6 +2412,25 @@
     "saas": true,
     "scriptSrc": "ui\\.powerreviews\\.com",
     "website": "https://www.powerreviews.com/"
+  },
+  "PowerSchool": {
+    "cats": [
+      21
+    ],
+    "description": "PowerSchool is a widely used student information system (SIS) used by K-12 schools, districts, and other educational institutions to manage student data and information. The software is developed and marketed by PowerSchool Group LLC, which is based in California, USA.",
+    "headers": {
+      "content-security-policy": "\\.powerschool\\.com"
+    },
+    "icon": "PowerSchool.svg",
+    "meta": {
+      "application-name": "^PowerSchool$"
+    },
+    "pricing": [
+      "poa",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.powerschool.com"
   },
   "Powerboutique": {
     "cats": [
@@ -3062,6 +3299,20 @@
     "scriptSrc": "api\\.pushnami\\.com",
     "website": "https://pushnami.com"
   },
+  "Pushpay": {
+    "cats": [
+      111
+    ],
+    "description": "Pushpay is a digital giving and engagement platform designed to help churches manage processes related to donations and fundraising.",
+    "dom": "a[href*='//ppay.co/'][target='_blank']",
+    "icon": "Pushpay.svg",
+    "pricing": [
+      "payg"
+    ],
+    "saas": true,
+    "scriptSrc": "//pushpay\\.com/",
+    "website": "https://pushpay.com"
+  },
   "PyScript": {
     "cats": [
       19
@@ -3237,6 +3488,9 @@
     ],
     "cpe": "cpe:2.3:a:phpmyadmin:phpmyadmin:*:*:*:*:*:*:*:*",
     "description": "PhpMyAdmin is a free and open-source administration tool for MySQL and MariaDB.",
+    "headers": {
+      "Set-Cookie": "phpMyAdmin_https"
+    },
     "html": [
       "!\\[CDATA\\[[^<]*PMA_VERSION:\\\"([\\d.]+)\\;version:\\1",
       "(?: \\| phpMyAdmin ([\\d.]+)<\\/title>|PMA_sendHeaderLocation\\(|<link [^>]*href=\"[^\"]*phpmyadmin\\.css\\.php)\\;version:\\1"

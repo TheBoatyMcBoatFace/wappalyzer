@@ -127,6 +127,21 @@
     "scriptSrc": "zanox\\.com/scripts/zanox\\.js$",
     "website": "http://zanox.com"
   },
+  "Zeald": {
+    "cats": [
+      6
+    ],
+    "cookies": {
+      "ZES_BACKEND": "zeald"
+    },
+    "description": "Zeald is a full-service website design and digital marketing company.",
+    "icon": "Zeald.png",
+    "pricing": [
+      "poa"
+    ],
+    "requires": "Cart Functionality",
+    "website": "https://www.zeald.com"
+  },
   "Zeleris": {
     "cats": [
       99
@@ -310,6 +325,22 @@
     ],
     "saas": true,
     "website": "https://zid.sa"
+  },
+  "Ziggy": {
+    "cats": [
+      59
+    ],
+    "description": "Ziggy is a library that allows using Laravel named routes in JavaScript.",
+    "icon": "Ziggy.png",
+    "implies": [
+      "Laravel",
+      "Inertia.js"
+    ],
+    "js": {
+      "Ziggy": ""
+    },
+    "oss": true,
+    "website": "https://github.com/tighten/ziggy"
   },
   "Zimbra": {
     "cats": [
@@ -639,7 +670,7 @@
     "icon": "zotabox.png",
     "js": {
       "Zotabox": "",
-      "Zotabox_Init ": ""
+      "Zotabox_Init": ""
     },
     "pricing": [
       "low",
@@ -681,23 +712,5 @@
     ],
     "saas": true,
     "website": "https://www.zuppler.com"
-  },
-  "Zyro": {
-    "cats": [
-      51
-    ],
-    "description": "Zyro is a website builder service by the Hostinger group.",
-    "icon": "Zyro.svg",
-    "implies": "Vue.js",
-    "meta": {
-      "generator": "^Zyro\\.com Website Builder$"
-    },
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "saas": true,
-    "scriptSrc": "userapp\\.zyrosite\\.com/",
-    "website": "https://zyro.com"
   }
 }

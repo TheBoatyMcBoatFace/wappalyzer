@@ -1,4 +1,3 @@
-// const os = require('os')
 const fs = require('fs')
 const dns = require('dns').promises
 const path = require('path')
@@ -16,6 +15,7 @@ const { CHROMIUM_BIN, CHROMIUM_DATA_DIR, CHROMIUM_WEBSOCKET, CHROMIUM_ARGS } =
 const chromiumArgs = CHROMIUM_ARGS
   ? CHROMIUM_ARGS.split(' ')
   : [
+      '--headless',
       '--single-process',
       '--no-sandbox',
       '--no-zygote',
@@ -65,17 +65,26 @@ function getJs(page, technologies = Wappalyzer.technologies) {
         chains.forEach((chain) => {
           chain = chain.replace(/\[([^\]]+)\]/g, '.$1')
 
-          const value = chain
-            .split('.')
-            .reduce(
-              (value, method) =>
-                value &&
-                value instanceof Object &&
-                Object.prototype.hasOwnProperty.call(value, method)
-                  ? value[method]
-                  : '__UNDEFINED__',
-              window
-            )
+          const parts = chain.split('.')
+
+          const root = /^[a-z_$][a-z0-9_$]*$/i.test(parts[0])
+            ? // eslint-disable-next-line no-new-func
+              new Function(
+                `return typeof ${
+                  parts[0]
+                } === 'undefined' ? undefined : ${parts.shift()}`
+              )()
+            : window
+
+          const value = parts.reduce(
+            (value, method) =>
+              value &&
+              value instanceof Object &&
+              Object.prototype.hasOwnProperty.call(value, method)
+                ? value[method]
+                : '__UNDEFINED__',
+            root || '__UNDEFINED__'
+          )
 
           if (value !== '__UNDEFINED__') {
             technologies.push({
@@ -385,12 +394,14 @@ class Driver {
           try {
             await this.init()
           } catch (error) {
-            this.log(error.toString())
+            this.log(error)
           }
         }
       })
     } catch (error) {
-      throw new Error(error.toString())
+      this.log(error)
+
+      throw new Error(error.message || error.toString())
     }
   }
 
@@ -684,11 +695,12 @@ class Site {
             if (headers.location) {
               const _url = new URL(headers.location.slice(-1), url)
 
+              const redirects = Object.keys(this.analyzedUrls).length - 1
+
               if (
                 _url.hostname.replace(/^www\./, '') ===
                   this.originalUrl.hostname.replace(/^www\./, '') ||
-                (Object.keys(this.analyzedUrls).length === 1 &&
-                  !this.options.noRedirect)
+                (redirects < 3 && !this.options.noRedirect)
               ) {
                 url = _url
 
@@ -1144,7 +1156,7 @@ class Site {
             patterns[name].push({
               type,
               regex: regex.source,
-              value: value.length <= 250 ? value : null,
+              value: String(value).length <= 250 ? value : null,
               match: match.length <= 250 ? match : null,
               confidence,
               version,

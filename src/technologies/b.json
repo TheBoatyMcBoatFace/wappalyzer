@@ -94,7 +94,7 @@
       "poa"
     ],
     "saas": true,
-    "website": "https://www.bsmart.co.il"
+    "website": "https://www.bsmart.co.il/?utm_source=wappalyzer&utm_medium=referral"
   },
   "Babel": {
     "cats": [
@@ -425,6 +425,23 @@
     "scriptSrc": "//outsellapp\\.com/",
     "website": "https://apps.shopify.com/outsell"
   },
+  "Beamer": {
+    "cats": [
+      85
+    ],
+    "description": "Beamer is a feature management platform that allows businesses to manage and share new product releases, feature updates, and bug fixes with their customers.",
+    "icon": "Beamer.svg",
+    "js": {
+      "Beamer.enabled": "true",
+      "_BEAMER_URL": "//app\\.getbeamer\\.com/"
+    },
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.getbeamer.com"
+  },
   "Beans": {
     "cats": [
       84
@@ -635,6 +652,22 @@
     "url": "mybigcommerce\\.com",
     "website": "http://www.bigcommerce.com"
   },
+  "BigDataCloud IP Geolocation": {
+    "cats": [
+      79
+    ],
+    "description": "BigDataCloud IP Geolocation API provides detailed and accurate locality and security metrics of an IP address.",
+    "icon": "BigDataCloud-IPGeolocation.svg",
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "bigdatacloud\\.net",
+    "website": "https://www.bigdatacloud.com/packages/ip-geolocation",
+    "xhr": "api\\.bigdatacloud\\.net"
+  },
   "BigTree CMS": {
     "cats": [
       1
@@ -653,6 +686,27 @@
     },
     "oss": true,
     "website": "https://www.bigtreecms.org"
+  },
+  "Bigin": {
+    "cats": [
+      53
+    ],
+    "description": "Bigin is a cloud-based customer relationship management (CRM) software.",
+    "icon": "Bigin.png",
+    "js": {
+      "BIGIN_SDK_API": "",
+      "bigin._checkDataSize": "",
+      "biginCafe24DisableOptions": "",
+      "bigin_search": ""
+    },
+    "pricing": [
+      "freemium",
+      "high",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "sdk\\.bigin\\.io/",
+    "website": "https://en.bigin.io"
   },
   "Bigware": {
     "cats": [
@@ -891,7 +945,7 @@
     "cats": [
       80
     ],
-    "description": "Blocksy is a blazing fast and lightweight WordPress theme.",
+    "description": "Blocksy is a modern and lightweight WordPress theme designed for a variety of websites, including blogs, portfolios, ecommerce stores, and business websites.",
     "dom": "link[href*='/wp-content/themes/blocksy/']",
     "icon": "Blocksy.svg",
     "js": {
@@ -907,6 +961,29 @@
     "requires": "WordPress",
     "scriptSrc": "/wp-content/themes/blocksy/(?:.+main\\.js(?:\\?ver=([\\d\\.]+)))?\\;version:\\1",
     "website": "https://creativethemes.com/blocksy"
+  },
+  "Blocksy Companion": {
+    "cats": [
+      87
+    ],
+    "description": "Blocksy Companion is a WordPress plugin that provides additional functionality and features for the Blocksy theme.",
+    "dom": {
+      "link[href*='/wp-content/plugins/blocksy-companion']": {
+        "attributes": {
+          "href": "/wp-content/plugins/blocksy-companion(?:-pro)?/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+        }
+      }
+    },
+    "icon": "Blocksy.svg",
+    "implies": "Blocksy",
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "requires": "WordPress",
+    "scriptSrc": "/wp-content/plugins/blocksy-companion(?:-pro)?/",
+    "website": "https://creativethemes.com/blocksy/companion/"
   },
   "Blogger": {
     "cats": [
@@ -1100,6 +1177,19 @@
     "icon": "Blueshift.png",
     "scriptSrc": "cdn.getblueshift.com/",
     "website": "https://blueshift.com/"
+  },
+  "Bluestone PIM": {
+    "cats": [
+      95
+    ],
+    "description": "Bluestone PIM is primarily a product information management (PIM) solution, which is focused on managing and distributing product data across multiple channels. However, it also includes some features that are typically associated with digital asset management (DAM), such as the ability to manage and store product images, videos, and other digital assets.",
+    "dom": "img[src*='media.bluestonepim.com/'], img[data-srcset*='media.bluestonepim.com/']",
+    "icon": "Bluestone PIM.svg",
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "website": "https://www.bluestonepim.com"
   },
   "Boats Group": {
     "cats": [
@@ -1968,6 +2058,25 @@
     "requires": "WordPress",
     "website": "https://github.com/mtekk/Breadcrumb-NavXT"
   },
+  "Breakdance": {
+    "cats": [
+      51
+    ],
+    "description": "Breakdance is a page builder that features a drag-and-drop interface for users to create pages using full site editing functionality.",
+    "icon": "Breakdance.svg",
+    "js": {
+      "BreakdanceFrontend": "",
+      "BreakdanceHeaderBuilder": "",
+      "BreakdanceSwiper": ""
+    },
+    "pricing": [
+      "freemium",
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://breakdance.com"
+  },
   "Breinify": {
     "cats": [
       76
@@ -2346,9 +2455,9 @@
     ],
     "description": "Bulma is a free class-based framework for CSS.",
     "dom": {
-      "link[href*='bulma.min.css']": {
+      "link[href*='bulma']": {
         "attributes": {
-          "href": "(?:([\\d\\.]+)/css/)?bulma\\.min\\.css\\;version:\\1"
+          "href": "(?:([\\d\\.]+)/css/)?bulma(?:-docs)?\\.min\\.css\\;version:\\1"
         }
       }
     },
@@ -2386,8 +2495,19 @@
     "headers": {
       "Server": "^BunnyCDN"
     },
-    "icon": "Bunny.png",
+    "icon": "Bunny.svg",
     "website": "https://bunny.net"
+  },
+  "Bunny Fonts": {
+    "cats": [
+      17
+    ],
+    "description": "Bunny Fonts is an open-source, privacy-first web font platform designed to put privacy back into the internet.",
+    "dom": "link[href*='fonts.bunny.net']",
+    "icon": "Bunny.svg",
+    "implies": "Bunny",
+    "oss": true,
+    "website": "https://fonts.bunny.net"
   },
   "Business Catalyst": {
     "cats": [
@@ -2539,6 +2659,9 @@
     ],
     "description": "bdok is a cloud-based platform which provides the capability to create and manage online stores with no technical knowledge.",
     "icon": "bdok.svg",
+    "meta": {
+      "bdok": ""
+    },
     "pricing": [
       "low",
       "recurring"

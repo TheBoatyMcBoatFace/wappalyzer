@@ -170,6 +170,31 @@
     "saas": true,
     "website": "https://www.ueeshop.com"
   },
+  "Ultimate Addons for Elementor": {
+    "cats": [
+      87
+    ],
+    "description": "Ultimate Addons for Elementor is a plugin that adds new widgets and modules to the Elementor page builder for WordPress, providing additional design options and functionality.",
+    "dom": {
+      "link[href*='/wp-content/plugins/ultimate-elementor/']": {
+        "attributes": {
+          "href": "/wp-content/plugins/ultimate-elementor/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+        }
+      }
+    },
+    "icon": "Ultimate Addons for Elementor.svg",
+    "implies": "Elementor",
+    "js": {
+      "uael_particles_script.particles_url": "/wp-content/plugins/ultimate-elementor/"
+    },
+    "pricing": [
+      "onetime",
+      "low",
+      "recurring"
+    ],
+    "requires": "WordPress",
+    "website": "https://ultimateelementor.com"
+  },
   "Ultimate GDPR & CCPA": {
     "cats": [
       67,
@@ -238,7 +263,8 @@
     "icon": "Umbraco.png",
     "implies": "Microsoft ASP.NET",
     "js": {
-      "UC_IMAGE_SERVICE|ITEM_INFO_SERVICE": "",
+      "ITEM_INFO_SERVICE": "",
+      "UC_IMAGE_SERVICE": "",
       "UC_ITEM_INFO_SERVICE": "",
       "UC_SETTINGS": "",
       "Umbraco": ""
@@ -269,6 +295,7 @@
       "g_umi.version": "([\\d\\.]+)\\;version:\\1"
     },
     "oss": true,
+    "scriptSrc": "/umi\\.js",
     "website": "https://umijs.org"
   },
   "Umso": {
@@ -350,6 +377,18 @@
     "requires": "WordPress",
     "scriptSrc": "wp-content/themes/understrap(?:[masterchild-]+)?(?:[masterchild-]+)?/",
     "website": "https://understrap.com"
+  },
+  "UniFi OS": {
+    "cats": [
+      28
+    ],
+    "description": "UniFi OS is the operating system for UniFi products, which provides a user interface.",
+    "icon": "UniFi_OS.png",
+    "js": {
+      "unifiConstant.VERSION": "^([\\d+\\.]+)$\\;version:\\1"
+    },
+    "requires": "AngularJS",
+    "website": "https://www.ui.com/"
   },
   "Uniconsent": {
     "cats": [
@@ -440,6 +479,19 @@
     "saas": true,
     "scriptSrc": "www\\.upsellit\\.com/",
     "website": "https://us.upsellit.com"
+  },
+  "UpSolution Zephyr": {
+    "cats": [
+      80
+    ],
+    "description": "Zephyr is a WordPress theme developed by UpSolution, a software development company based in Ukraine that specialises in creating themes and plugins for WordPress.",
+    "icon": "UpSolution.png",
+    "pricing": [
+      "onetime"
+    ],
+    "requires": "WordPress",
+    "scriptSrc": "/wp-content/themes/Zephyr/.+us\\.theme\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1",
+    "website": "https://zephyr.us-themes.com"
   },
   "Upfluence": {
     "cats": [
@@ -599,6 +651,19 @@
     ],
     "saas": true,
     "website": "https://uscreen.tv/"
+  },
+  "User Accessibility": {
+    "cats": [
+      68
+    ],
+    "description": "User Accessibility is a solution incorporating automated site scanning and machine learning for future updates, while utilising JS to conform to WECAG standards for improved website and application accessibility.",
+    "icon": "User Accessibility.svg",
+    "pricing": [
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "//system\\.user-a\\.co\\.il/",
+    "website": "https://user-a.co.il"
   },
   "UserLike": {
     "cats": [
@@ -831,6 +896,22 @@
     ],
     "saas": true,
     "website": "https://ulogin.ru"
+  },
+  "uMarketingSuite": {
+    "cats": [
+      10,
+      76
+    ],
+    "description": "uMarketingSuite is a set of diverse features that together form a full marketing suite for the Umbraco platform.",
+    "icon": "uMarketingSuite.svg",
+    "implies": "Umbraco",
+    "js": {
+      "uMarketingSuite": ""
+    },
+    "pricing": [
+      "poa"
+    ],
+    "website": "https://www.umarketingsuite.com"
   },
   "uPlot": {
     "cats": [

@@ -41,6 +41,7 @@ wappalyzer <url> [options]
 -e, --extended             Output additional information
 --local-storage=...        JSON object to use as local storage
 --session-storage=...      JSON object to use as session storage
+--defer=ms                 Defer scan for ms milliseconds after page load
 
 ```
 
@@ -122,10 +123,13 @@ const wappalyzer = new Wappalyzer()
     await wappalyzer.init()
 
     const results = await Promise.all(
-      urls.map(async (url) => ({
-        url,
-        results: await wappalyzer.open(url).analyze()
-      }))
+      urls.map(async (url) => {
+        const site = await wappalyzer.open(url)
+
+        const results = await site.analyze()
+
+        return { url, results }
+      })
     )
 
     console.log(JSON.stringify(results, null, 2))

@@ -5,7 +5,7 @@
     ],
     "html": "<a-scene[^<>]*>",
     "icon": "A-Frame.svg",
-    "implies": "three.js",
+    "implies": "Three.js",
     "js": {
       "AFRAME.version": "^(.+)$\\;version:\\1"
     },
@@ -1535,6 +1535,22 @@
     },
     "website": "http://www.adobe.com/products/golive"
   },
+  "Adobe Portfolio": {
+    "cats": [
+      51
+    ],
+    "description": "Adobe Portfolio is an Adobe platform that allows you to create a web page where you can show your projects, creations, and the services you offer.",
+    "icon": "Adobe Portfolio.svg",
+    "meta": {
+      "twitter:site": "@AdobePortfolio"
+    },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://portfolio.adobe.com"
+  },
   "Adobe RoboHelp": {
     "cats": [
       4
@@ -1735,6 +1751,18 @@
     "scriptSrc": "static\\.affiliatly\\.com/",
     "website": "https://www.affiliatly.com"
   },
+  "Affilio": {
+    "cats": [
+      71
+    ],
+    "description": "Affilio is an Iranian affiliate marketing platform.",
+    "dom": "a[href*='.affilio.ir/'][target='_blank']",
+    "icon": "Affilio.png",
+    "js": {
+      "Affilio.widget": ""
+    },
+    "website": "https://affilio.ir"
+  },
   "Affilo": {
     "cats": [
       71,
@@ -1771,7 +1799,7 @@
       6
     ],
     "headers": {
-      "X-Powered-By": "Afosto SaaS BV"
+      "X-Powered-By": "Afosto SaaS BV\\;version:2.0"
     },
     "icon": "Afosto.svg",
     "website": "http://afosto.com"
@@ -1982,7 +2010,7 @@
       5
     ],
     "description": "Airtable is a low-code platform for building collaborative apps.",
-    "dom": "iframe[scr*='//airtable.com/'], a[href*='//airtable.com/][target='_blank']",
+    "dom": "iframe[scr*='//airtable.com/'], a[href*='//airtable.com/'][target='_blank']",
     "icon": "Airtable.svg",
     "pricing": [
       "freemium",
@@ -2131,6 +2159,24 @@
     "icon": "akka-http.png",
     "website": "http://akka.io"
   },
+  "Aklamio": {
+    "cats": [
+      94
+    ],
+    "description": "Aklamio is a solution for enterprise level referral marketing and customer incentivisation.",
+    "dom": "a[href*='.aklamio.com/']",
+    "headers": {
+      "content-security-policy": "\\.aklamio\\.com"
+    },
+    "icon": "Aklamio.svg",
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "scriptSrc": "\\.aklamio\\.com/",
+    "website": "https://www.aklamio.com"
+  },
   "Aksara CMS": {
     "cats": [
       1
@@ -2226,6 +2272,24 @@
     "saas": true,
     "website": "http://www.algolia.com"
   },
+  "Algolia DocSearch": {
+    "cats": [
+      5
+    ],
+    "description": "Algolia DocSearch is a search widget specifically designed for documentation websites.",
+    "icon": "DocSearch.svg",
+    "implies": "Algolia",
+    "js": {
+      "docsearch.version": "([\\d\\.]+)\\;version:\\1"
+    },
+    "pricing": [
+      "freemium",
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://docsearch.algolia.com"
+  },
   "Ali Reviews": {
     "cats": [
       90,
@@ -2238,6 +2302,42 @@
     },
     "saas": true,
     "website": "https://apps.shopify.com/ali-reviews"
+  },
+  "Alibaba Cloud CDN": {
+    "cats": [
+      31
+    ],
+    "description": "Alibaba Cloud CDN is a global network of servers designed to deliver high-performance, low-latency content to users around the world. It is a cloud-based service provided by Alibaba Cloud, a subsidiary of the Alibaba Group, that enables businesses to accelerate the delivery of their web content, including images, videos, and static files, to end-users.",
+    "dom": "img[src*='.alicdn.com/']",
+    "icon": "Alibaba Cloud.svg",
+    "scriptSrc": "\\.alicdn\\.com/",
+    "website": "https://www.alibabacloud.com/product/content-delivery-network"
+  },
+  "Alibaba Cloud Object Storage Service": {
+    "cats": [
+      63
+    ],
+    "description": "Alibaba Cloud Object Storage Service (OSS) is a cloud-based object storage service provided by Alibaba Cloud, which allows users to store and access large amounts of data in the cloud.",
+    "headers": {
+      "x-oss-object-type": "",
+      "x-oss-request-id": "",
+      "x-oss-storage-class": ""
+    },
+    "icon": "Alibaba Cloud.svg",
+    "pricing": [
+      "freemium",
+      "payg"
+    ],
+    "website": "https://www.alibabacloud.com/product/object-storage-service"
+  },
+  "Alibaba Cloud Verification Code": {
+    "cats": [
+      16
+    ],
+    "description": "Alibaba Cloud Verification Code is a security feature provided by Alibaba Cloud to help protect user accounts from unauthorised access.",
+    "icon": "Alibaba Cloud.svg",
+    "scriptSrc": "cf\\.aliyun\\.com/",
+    "website": "https://help.aliyun.com/document_detail/193141.html"
   },
   "All in One SEO Pack": {
     "cats": [
@@ -2351,6 +2451,21 @@
     "scriptSrc": "js/alternc\\.js",
     "website": "https://alternc.com"
   },
+  "AlumnIQ": {
+    "cats": [
+      111
+    ],
+    "cookies": {
+      "alumniq-online-giving": ""
+    },
+    "description": "AlumnIQ is a set of services to manage events, giving, email, volunteers, class agents, and more, all designed to work with your database of record.",
+    "dom": "a[href*='.alumniq.com/giving/to/']",
+    "icon": "AlumnIQ.svg",
+    "pricing": [
+      "poa"
+    ],
+    "website": "https://www.alumniq.com/platform/"
+  },
   "Amaya": {
     "cats": [
       20
@@ -2360,6 +2475,7 @@
     "meta": {
       "generator": "Amaya(?: V?([\\d.]+[a-z]))?\\;version:\\1"
     },
+    "oss": true,
     "website": "http://www.w3.org/Amaya"
   },
   "Amazon ALB": {
@@ -2421,6 +2537,23 @@
     "implies": "Amazon Web Services",
     "website": "https://aws.amazon.com/rds/aurora"
   },
+  "Amazon CloudFront": {
+    "cats": [
+      31
+    ],
+    "description": "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds.",
+    "dns": {
+      "CNAME": "^[a-z0-9]+\\.cloudfront.net\\.?$"
+    },
+    "headers": {
+      "Via": "\\(CloudFront\\)$",
+      "X-Amz-Cf-Id": ""
+    },
+    "icon": "Amazon Cloudfront.svg",
+    "implies": "Amazon Web Services",
+    "saas": true,
+    "website": "http://aws.amazon.com/cloudfront/"
+  },
   "Amazon CloudWatch RUM": {
     "cats": [
       78
@@ -2438,23 +2571,6 @@
     ],
     "saas": true,
     "website": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html"
-  },
-  "Amazon Cloudfront": {
-    "cats": [
-      31
-    ],
-    "description": "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds.",
-    "dns": {
-      "CNAME": "^[a-z0-9]+\\.cloudfront.net\\.?$"
-    },
-    "headers": {
-      "Via": "\\(CloudFront\\)$",
-      "X-Amz-Cf-Id": ""
-    },
-    "icon": "Amazon Cloudfront.svg",
-    "implies": "Amazon Web Services",
-    "saas": true,
-    "website": "http://aws.amazon.com/cloudfront/"
   },
   "Amazon Cognito": {
     "cats": [
@@ -2515,6 +2631,10 @@
     ],
     "cookies": {
       "AWSELB": ""
+    },
+    "description": "AWS ELB is a network load balancer service provided by Amazon Web Services for distributing traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and Lambda functions.",
+    "headers": {
+      "Server": "awselb"
     },
     "icon": "Amazon ELB.svg",
     "implies": "Amazon Web Services",
@@ -2725,6 +2845,7 @@
     "icon": "Amplitude.svg",
     "js": {
       "AMPLITUDE_KEY": "",
+      "__AMPLITUDE__": "",
       "amplitudeClient": ""
     },
     "pricing": [
@@ -2750,6 +2871,23 @@
     },
     "scriptSrc": "AnalysysFangzhou_JS_SDK\\.min\\.js\\?v=([\\d.]+)\\;version:\\1",
     "website": "https://ark.analysys.cn"
+  },
+  "Analyzee": {
+    "cats": [
+      10
+    ],
+    "description": "Analyzee is an analytics tool that allows you to gain insights into visitor behavior and optimise your website's user experience using heatmaps and other analytics features.",
+    "icon": "Analyzee.svg",
+    "js": {
+      "Analyzee._sessionExtend": "",
+      "analyzee._session": ""
+    },
+    "pricing": [
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://analyzee.io"
   },
   "AndersNoren Baskerville": {
     "cats": [
@@ -2830,7 +2968,7 @@
     ],
     "description": "Angie is a drop-in replacement for the Nginx web server aiming to extend the functionality of the original version.",
     "headers": {
-      "server": "^Angie/([\\d\\.]+)$\\;version:\\1"
+      "server": "^Angie(?:/([\\d\\.]+))?$\\;version:\\1"
     },
     "icon": "default.svg",
     "implies": [
@@ -2871,6 +3009,7 @@
       66
     ],
     "description": "Angular Material is a UI component library for Angular JS developers. Angular Material components assist in constructing attractive, consistent, and functional web pages and web applications.",
+    "excludes": "Material Design Lite",
     "icon": "AngularJS.svg",
     "implies": "AngularJS",
     "js": {
@@ -3031,9 +3170,23 @@
     ],
     "website": "https://ipo.antee.cz"
   },
+  "Anthology Encompass": {
+    "cats": [
+      53
+    ],
+    "description": "Anthology Encompass is a constituent engagement management provider or educational institutions that provides modules to help you manage events, websites and content, data, and more.",
+    "dom": "a[href*='.imodules.com/s/']",
+    "icon": "Anthology.svg",
+    "pricing": [
+      "poa"
+    ],
+    "saas": true,
+    "url": "https.+\\.imodules\\.com/s/",
+    "website": "https://www.anthology.com/products/lifecycle-engagement/alumni-and-advancement/anthology-encompass"
+  },
   "AntiBot.Cloud": {
     "cats": [
-      13
+      16
     ],
     "description": "AntiBot.Cloud is a PHP script and cloud service to protect websites from bots and junk traffic.",
     "meta": {
@@ -3156,6 +3309,18 @@
     ],
     "oss": true,
     "website": "https://www.apereo.org/projects/cas"
+  },
+  "ApexCharts.js": {
+    "cats": [
+      25
+    ],
+    "description": "ApexCharts is a modern JavaScript charting library that empowers developers to build interactive data visualizations for commercial and non-commercial projects.",
+    "icon": "apexcharts.svg",
+    "js": {
+      "ApexCharts": ""
+    },
+    "oss": true,
+    "website": "https://apexcharts.com"
   },
   "ApexPages": {
     "cats": [
@@ -3354,6 +3519,25 @@
     "saas": true,
     "scriptSrc": "/apple_business_chat_commerce/.+/apple_message_button_v([\\d\\.]+)\\.js\\;version:\\1",
     "website": "https://developer.apple.com/documentation/businesschat"
+  },
+  "Apple MapKit JS": {
+    "cats": [
+      35
+    ],
+    "description": "Apple MapKit JS lets you embed interactive maps directly into your websites across platforms and operating systems, including iOS and Android.",
+    "headers": {
+      "content-security-policy": "\\.apple-mapkit\\.com"
+    },
+    "icon": "Apple.svg",
+    "js": {
+      "mapkit._tileProvider": ""
+    },
+    "pricing": [
+      "freemium",
+      "payg"
+    ],
+    "scriptSrc": "//cdn\\.apple-mapkit\\.com/mk/([\\d\\.\\w]+)\\;version:\\1",
+    "website": "https://developer.apple.com/maps/web/"
   },
   "Apple Pay": {
     "cats": [
@@ -3608,6 +3792,26 @@
     ],
     "website": "https://developers.arcgis.com/javascript/"
   },
+  "Arena": {
+    "cats": [
+      5
+    ],
+    "description": "Arena widget is an embeddable widget provided by the Arena platform, which allows users to embed live blogs directly on their website.",
+    "dom": "iframe[scr*='//go.arena.im/']",
+    "icon": "Arena.svg",
+    "js": {
+      "arenaHub.arenaIdentify": "",
+      "arenaLiveblog": "",
+      "arenaim.initializeLiveblog": ""
+    },
+    "pricing": [
+      "freemium",
+      "mid",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://arena.im"
+  },
   "Arreva": {
     "cats": [
       111
@@ -3685,6 +3889,7 @@
       31
     ],
     "description": "ArvanCloud is a cloud services provider, offering a wide range of incorporated cloud services including CDN, DDoS mitigation, Cloud Managed DNS, Cloud Security, VoD/AoD Streaming, Live Streaming, Cloud Compute, Cloud Object Storage, and PaaS.",
+    "dom": "img[src*='.arvanstorage.com/'], img[src*='.arvanstorage.ir/']",
     "headers": {
       "server": "ArvanCloud"
     },
@@ -3692,7 +3897,21 @@
     "js": {
       "ArvanCloud": ""
     },
-    "website": "http://www.arvancloud.com"
+    "website": "http://www.arvancloud.ir"
+  },
+  "Arya CMS": {
+    "cats": [
+      1
+    ],
+    "description": "Arya CMS is a lesser-known content management system that may not have a significant user base or active development community.",
+    "js": {
+      "AryaCMS": "([\\d\\.]+)\\;version:\\1"
+    },
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "website": "https://sndigitalhub.com"
   },
   "Asana": {
     "cats": [
@@ -3840,7 +4059,7 @@
       },
       "link[href*='/_astro/']": {
         "attributes": {
-          "href": "/_astro/(?:common|index)-[\\d\\w]+\\.css"
+          "href": "/_astro/(?:common|index)(?:-|\\.)[\\d\\w]+\\.css"
         }
       }
     },
@@ -4258,8 +4477,8 @@
       87,
       92
     ],
-    "description": "Autoptimize is a popular performance plugin for WordPress.",
-    "dom": "link[href*='/wp-content/plugins/autoptimize/']",
+    "description": "Autoptimize is a WordPress plugin that optimises website performance by aggregating, minifying, and compressing HTML, CSS, and JavaScript files.",
+    "dom": "link[href*='/wp-content/plugins/autoptimize/'], link[href*='/wp-content/cache/autoptimize/']",
     "icon": "Autoptimize.png",
     "pricing": [
       "freemium",
@@ -4476,6 +4695,23 @@
     ],
     "saas": true,
     "website": "https://www.azion.com/"
+  },
+  "Azko CMS": {
+    "cats": [
+      1
+    ],
+    "description": "Azko CMS is a content management system developed by Azko (Septeo Group) specifically launched for lawyers in France.",
+    "icon": "Azko CMS.svg",
+    "pricing": [
+      "poa"
+    ],
+    "requires": [
+      "Bootstrap",
+      "Slick"
+    ],
+    "saas": true,
+    "scriptSrc": "//js\\.fw\\.azko\\.fr/",
+    "website": "https://www.azko.fr"
   },
   "Azoya": {
     "cats": [
